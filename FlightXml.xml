@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfFlightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FlightClass>
+    <_FlightNumber>1234</_FlightNumber>
+    <_Date>18.10.2020</_Date>
+    <_DeparturePoint>Kovel</_DeparturePoint>
+    <_ArrivalPoint>Kyiv</_ArrivalPoint>
+    <_DepartureTime>21:03:11</_DepartureTime>
+    <_ArrivalTime>23:03:11</_ArrivalTime>
+  </FlightClass>
+  <FlightClass>
+    <_FlightNumber>12334</_FlightNumber>
+    <_Date>14.10.2020</_Date>
+    <_DeparturePoint>Kovel</_DeparturePoint>
+    <_ArrivalPoint>Kyiv</_ArrivalPoint>
+    <_DepartureTime>23:03:11</_DepartureTime>
+    <_ArrivalTime>21:03:11</_ArrivalTime>
+  </FlightClass>
+  <FlightClass>
+    <_FlightNumber>12324</_FlightNumber>
+    <_Date>19.10.2020</_Date>
+    <_DeparturePoint>Kovel</_DeparturePoint>
+    <_ArrivalPoint>Kyiv</_ArrivalPoint>
+    <_DepartureTime>17:03:11</_DepartureTime>
+    <_ArrivalTime>4:03:11</_ArrivalTime>
+  </FlightClass>
+</ArrayOfFlightClass>

@@ -1,0 +1,37 @@
+﻿<Window x:Class="Wallet.CreateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Wallet" Height="515.759" Width="550">
+
+    <Grid Background="DarkSeaGreen">
+        <ScrollViewer>
+        <StackPanel Margin="0,0,0,0.4">
+
+            <TextBlock Text="Account registration" FontSize="30" FontWeight="Bold" FontStyle="Italic"  HorizontalAlignment="Center" Margin="0,30,0,40"/>
+            <WrapPanel Orientation="Horizontal" Height="86">
+                <TextBox x:Name="LastName"  materialDesign:HintAssist.Hint="Enter Last Name " Style="{StaticResource MaterialDesignTextBoxBase }" Margin="42,30,30,5" Height="27" Width="204" PreviewMouseLeftButtonUp ="LastName_PreviewMouseLeftButtonUp"/>
+                <TextBox x:Name="FirstName" materialDesign:HintAssist.Hint="Enter First Name" Style="{StaticResource MaterialDesignTextBox}" Margin="0,30,10,5" Height="30" HorizontalAlignment="Right" Width="212" PreviewMouseLeftButtonUp="FirstName_PreviewMouseLeftButtonUp"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBox x:Name="CardNumber" materialDesign:HintAssist.Hint="Enter Card number" Style="{StaticResource MaterialDesignTextBox}" Margin="42,10,53,10" Height="29" HorizontalAlignment="Center" Width="261" RenderTransformOrigin="0.499,1.253" PreviewMouseLeftButtonUp="CardNumber_PreviewMouseLeftButtonUp"/>
+                <TextBox x:Name="TotalSum" materialDesign:HintAssist.Hint="Total sum on account" Style="{StaticResource MaterialDesignTextBox}" Margin="0,10,0,10" Height="29" HorizontalAlignment="Center" Width="130" PreviewMouseLeftButtonUp="TotalSum_PreviewMouseLeftButtonUp"/>
+            </WrapPanel>
+            <PasswordBox x:Name="Pas_box" materialDesign:HintAssist.Hint="Enter password" Style="{StaticResource MaterialDesignPasswordBox}" Margin="42,10,53,20" Height="29" PreviewMouseLeftButtonUp="Pas_box_PreviewMouseLeftButtonUp"/>
+            <PasswordBox x:Name="Pas_confirm" materialDesign:HintAssist.Hint="Confirm password" Style="{StaticResource MaterialDesignPasswordBox}" Margin="42,10,53,20" Height="25" PreviewMouseLeftButtonUp="Pas_comfirm_PreviewMouseLeftButtonUp"/>
+            <WrapPanel>
+                <Button x:Name="Back" Content="Back to menu" HorizontalAlignment="Left" Margin="13,20,12,5" Width="164" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Height="52" Click="Back_Click" RenderTransformOrigin="0.503,0.508"/>
+                <Button x:Name="CreateAccount1" Content="Create account" HorizontalAlignment="Right" Margin="33,20,0,5" Width="272" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Height="52" Click="CreateAccount1_Click" RenderTransformOrigin="0.503,0.508"/>
+            </WrapPanel>
+
+        </StackPanel>
+        </ScrollViewer>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="Wallet.UpdateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Wallet" Height="465.759" Width="507.6">
+
+    <Grid Background="DarkSeaGreen">
+        <ScrollViewer>
+        <StackPanel Margin="0,0,0,0.4">
+
+            <TextBlock Text="Update account info" FontSize="30" FontWeight="Bold" FontStyle="Italic"  HorizontalAlignment="Center" Margin="0,30,0,40"/>
+            <DataGrid x:Name="MyGrid" Background="DarkSeaGreen" GridLinesVisibility="All"  CanUserAddRows="False" AutoGenerateColumns="False" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="LightGray" Margin="50,0,51.8,10" Width="409" SelectionChanged="MyGrid_SelectionChanged">
+                    <DataGrid.Resources>
+                        <Style TargetType="{x:Type DataGridCell}">
+                            <Style.Triggers>
+                                <Trigger Property="DataGridCell.IsSelected" Value="False">
+                                    <Setter Property="Background" Value="DarkSeaGreen" />
+                                </Trigger>
+                                <Trigger Property="DataGridCell.IsSelected" Value="True">
+                                    <Setter Property="Background" Value="DarkSeaGreen" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                    <DataGridTextColumn Header="Owner name" Binding="{Binding _OwnerName}" Width="150"/>
+                    <DataGridTextColumn Header="Card number " Binding="{Binding _CardName}" Width="180"/>
+                    <DataGridTextColumn Header="Sum" Binding="{Binding _TotalMoney}" Width="75"/>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <WrapPanel>
+                    <Button x:Name="Back" Content="Back to menu" HorizontalAlignment="Left" Margin="48,20,12,5" Width="142" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Height="52" Click="Back_Click" RenderTransformOrigin="0.503,0.508"/>
+                    <Button x:Name="SaveUpdating" Content="Save updating" HorizontalAlignment="Center" Margin="18,20,12,5" Width="242" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Height="52" Click="SaveUpdating_Click" RenderTransformOrigin="0.503,0.508"/>
+
+                </WrapPanel>
+
+        </StackPanel>
+
+        </ScrollViewer>
+
+
+    </Grid>
+</Window>

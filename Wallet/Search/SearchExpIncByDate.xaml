@@ -1,0 +1,32 @@
+﻿<Window x:Class="Wallet.SearchExpIncByDate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Wallet" Height="320.82" Width="247.795">
+
+    <Grid Background="DarkSeaGreen">
+        <ScrollViewer>
+
+            <StackPanel>
+                <ComboBox Name="IncExp"   VerticalAlignment="Top"  SelectionChanged="IncExp_SelectionChanged" PreviewMouseLeftButtonUp="IncExp_PreviewMouseLeftButtonUp" Margin="14,40,30,0" HorizontalAlignment="Left" Width="166">
+
+                    <TextBlock>Income</TextBlock>
+                    <TextBlock >Expence</TextBlock>
+                    <TextBlock >Both</TextBlock>
+                </ComboBox>
+                <DatePicker x:Name="Picker" Width="166" Margin="14,10,0,0" DisplayDateStart="1/01/20" PreviewMouseLeftButtonUp="Picker_PreviewMouseLeftButtonUp" HorizontalAlignment="Left"  FirstDayOfWeek="Monday" />
+
+                <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Width="166" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Search_Click" Margin="14,30,0,0"/>
+                <Button x:Name="Back" Content="Back to menu" HorizontalAlignment="Left" Width="166"  Background="Black" Foreground="YellowGreen"  Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Back_Click" Margin="14,30,0,0"/>
+
+            </StackPanel>
+
+
+        </ScrollViewer>
+
+    </Grid>
+</Window>

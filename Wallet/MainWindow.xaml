@@ -1,0 +1,67 @@
+﻿<Window x:Class="Wallet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Wallet" Height="737" Width="405">
+
+    <Grid Background="LightGray">
+
+        <ScrollViewer Margin="-10,0,0,0" Height="706" VerticalAlignment="Top" Grid.RowSpan="1">
+            <StackPanel Height="815" Margin="0">
+                <Expander Header="Account managment"  Background="DarkSeaGreen"  Margin="40"  Padding="5"  >
+                    <Expander.Effect>
+                        <DropShadowEffect BlurRadius="70" Color="#3AA6D0"  />
+                    </Expander.Effect>
+                    <WrapPanel Margin="0 0 0 20">
+                        <Button x:Name="CreateAccount" Content="Add new bank account" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton }" Click="CreateAccount_Click"/>
+                        <Button x:Name="DeleteAccount" Content="Delete account" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="DeleteAccount_Click"/>
+                        <Button x:Name="UpdateAccount" Content="Update account" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="UpdateAccount_Click"/>
+                        <Button x:Name="ShowAllAccount" Content="Show all account" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="ShowAllAccount_Click"/>
+                        <Button x:Name="ShowSum" Content="Show Sum on account" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="ShowSum_Click"/>
+                    </WrapPanel>
+                </Expander>
+                <Expander Header="Category managment"  Background="DarkSeaGreen"  Margin="40"  Padding="5"  >
+                    <Expander.Effect>
+                        <DropShadowEffect BlurRadius="70" Color="#3AA6D0"  />
+                    </Expander.Effect>
+                    <WrapPanel Margin="0 0 0 20">
+                        <Button x:Name="CreateCategory" Content="Add new category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="CreateCategory_Click"/>
+                        <Button x:Name="DeleteCategory" Content="Delete category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="DeleteCategory_Click"/>
+                        <Button x:Name="UpdateCategory" Content="Update category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="UpdateCategory_Click"/>
+                        <Button x:Name="ShowAllCategory" Content="Show all category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="ShowAllCategory_Click"/>
+                    </WrapPanel>
+                </Expander>
+                <Expander Header="Expenses/income managment"  Background="DarkSeaGreen"  Margin="40"  Padding="5"  >
+                    <Expander.Effect>
+                        <DropShadowEffect BlurRadius="70" Color="#3AA6D0"  />
+                    </Expander.Effect>
+                    <WrapPanel Margin="0 0 0 20">
+                        <Button x:Name="CreateExpenseincome" Content="Add new Expense/income" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="CreateExpense_income_Click_1"/>
+                        <Button x:Name="DeleteExpenseincome" Content="Delete Expense/income" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="DeleteExpense_income_Click_1"/>
+                        <Button x:Name="TransferBetweenAcc" Content="Transfer money between acc" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="TransferBetweenAcc_Click_1"/>
+                    </WrapPanel>
+                </Expander>
+                <Expander Header="Search"  Background="DarkSeaGreen"  Margin="40"  Padding="5"  >
+                    <Expander.Effect>
+                        <DropShadowEffect BlurRadius="70" Color="#3AA6D0"  />
+                    </Expander.Effect>
+                    <WrapPanel Margin="0 0 0 20">
+                        <Button x:Name="SearchCategory" Content="Search Category" HorizontalAlignment="Center" Margin="40,0,13,5" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SearchCategory_Click" Width="231"/>
+                        <Button x:Name="SearchExpenInc" Content="Search Exp/Inc by category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SearchExpen_Inc_Click"/>
+                        <Button x:Name="SearchExpenIncByAmount" Content="Search Exp/Inc by amount" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SearchExpen_IncByAmount_Click"/>
+                        <Button x:Name="SearchExpenIncByDate" Content="Search Exp/Inc by date" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SearchExpen_IncByDate_Click"/>
+                        <Button x:Name="SearchExpenIncForPeriod" Content="Search Exp/Inc for period" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SearchExpen_IncForPeriod_Click"/>
+                        <Button x:Name="GetStatisticforPeriod" Content="Get statistic for period" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="GetStatisticforPeriod_Click"/>
+                        <Button x:Name="GetStatisticForCategory" Content="Get statistic for category" HorizontalAlignment="Center" Margin="40,0,13,5" Width="231" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="GetStatisticForCategory_Click"/>
+                    </WrapPanel>
+                </Expander>
+
+            </StackPanel>
+        </ScrollViewer>
+        <!--//<Border MinHeight="550" MinWidth="800" Margin="20" Background="White" />-->
+    </Grid>
+</Window>

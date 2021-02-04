@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\TermPaper\DLL\bin\Debug\netstandard2.0\DLL.deps.json
+C:\Users\user\source\repos\TermPaper\DLL\bin\Debug\netstandard2.0\DLL.dll
+C:\Users\user\source\repos\TermPaper\DLL\bin\Debug\netstandard2.0\DLL.pdb
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.csprojAssemblyReference.cache
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.AssemblyInfo.cs
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.dll
+C:\Users\user\source\repos\TermPaper\DLL\obj\Debug\netstandard2.0\DLL.pdb

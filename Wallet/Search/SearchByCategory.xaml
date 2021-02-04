@@ -1,0 +1,25 @@
+﻿<Window x:Class="Wallet.SearchByCategory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wallet"
+         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Wallet" Height="330.403" Width="254.518">
+
+    <Grid Background="DarkSeaGreen">
+        <ScrollViewer>
+            <StackPanel Margin="0,0,0,0.4">
+
+                <TextBlock Text="Search category" FontSize="25" FontWeight="Bold" FontStyle="Italic"  HorizontalAlignment="Left" Margin="20,30,0,10" Width="189"/>
+
+                <TextBox x:Name="CategoryName" materialDesign:HintAssist.Hint="Eneter category name" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignTextBox}" Width="197" Margin="14,30,20,0" PreviewMouseLeftButtonUp="CategoryName_PreviewMouseLeftButtonUp"/>
+                <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Width="200" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Search_Click" Margin="14,30,0,0"/>
+                <Button x:Name="Back" Content="Back to menu" HorizontalAlignment="Left" Width="200" Background="Black" Foreground="YellowGreen" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="Back_Click" Margin="14,30,0,0"/>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
+

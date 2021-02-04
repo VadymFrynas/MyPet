@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8pels1bABagzb84vyQHvt//AXaRJ0ALfmcBP025ihxYpHfTPOM67TUsxF1fYylCOU6qP1xqXz+aIAEBEEHLegA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\TestTerm\\TermPaper\\TermPaper\\TermPaper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oCooHheh4avNv3EbV5JX6WhcBPRN51qnt0UybSwLRNKdL+0Gfq8GTU6HuT6Iu3Ab2ncqAgBA12Nasx6YxasvrA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\MyPet\\Mapper\\Mapper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
